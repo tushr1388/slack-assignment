@@ -1,0 +1,68 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>URL Contents Fetcher</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/codemirror.css" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" rel="stylesheet" type="text/css" />
+  <link href="css/docs.css" rel="stylesheet" type="text/css" />
+
+  <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/custom.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/codemirror.js"></script>
+  <script type="text/javascript" src="js/htmlmixed.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+  <script type="text/javascript" src="js/xml.js"></script>
+  <script type="text/javascript" src="js/xml-fold.js"></script>
+  <script type="text/javascript" src="js/formatting.js"></script>
+</head>
+
+<body>
+  <div class="container">
+      <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12" style="text-align:center;">
+                <h3>Enter URL to be fetched</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <input class="form-control" id="input-url" type="text" value="www.google.com">
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row buttons-margin-outer">
+            <div class="col-lg-4 buttons-margin">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button id="view-source" class="btn btn-default" type="button" onClick="viewSource()">Source Code</button>
+                        <button id="tag-summary" class="btn btn-default tag-margin" type="button" onClick="tagSummary()">Tag Summary</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-4 -->
+        </div>
+
+        <!-- spinner -->
+        <div id="spinner" class="row">
+          <img src="img/gears.gif" alt="Smiley face" >
+        </div>
+
+        <!-- Jumbotron Header -->
+        <textarea id="display" class="jumbotron output-area">
+        </textarea>
+
+        <!-- table -->
+        <div id="table" class="output-area">
+        </div>
+  </div>
+</body>
+</html>
